@@ -1,0 +1,47 @@
+extend ../layout
+
+block content
+  .camera-wrapper-outer
+    .back-button
+      a.back-text(href='/')
+        i.fa.fa-angle-left
+        |             Back
+    .camera-wrapper
+      .camera-left
+        .camera-left-item.camera-left-word
+          span A
+          span Y
+          span A
+          span M
+          span  
+          span G
+          span O
+          span R
+          span E
+          span N
+          span G
+        .camera-left-item.camera-left-letter
+          | A
+      .camera-right
+        video(autoplay)
+    .field.is-grouped.capture-group
+      .camera-point
+      #userMedia.button.capture-button
+        | CAPTURE
+  
+  script.
+    var imageCapture;
+    document.querySelector('#userMedia').addEventListener('click', () => {
+    navigator.mediaDevices.getUserMedia({video: true})
+    .then(mediaStream => {
+    document.querySelector('video').srcObject = mediaStream;
+    const track = mediaStream.getVideoTracks()[0];
+    imageCapture = new ImageCapture(track);
+    })
+    .catch(error => ChromeSamples.log(error));
+    var z = Math.round(Math.random());
+    if (z && imageCapture) {
+      $( "div.camera-point" ).html( "<span class='camera-point-accepted'>ACCEPTED</span>" );
+      $("#userMedia").hide();
+    } else $( "div.camera-point" ).html( "<span class='camera-point-rejected'>REJECTED</span>" );
+    });

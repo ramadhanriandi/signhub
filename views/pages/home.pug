@@ -1,0 +1,35 @@
+extends ../layout
+
+block content
+  .home-wrapper
+    .hero-title
+      | Connecting the world
+      br
+      | through 
+      span.hero-title-bold SIGN
+    .hero-subtitle
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+      br
+      |  ut labore et dolore magna aliqua.
+    .hero-items
+      .hero-item
+        img.hero-item-img(src='/assets/img/playsign.png')
+        .hero-item-desc
+          p.hero-item-title PlaySIGN
+          p.hero-item-subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          button.button.hero-item-button(onclick="location.href='/play/'") PLAY NOW
+      .hero-item
+        img.hero-item-img(src='/assets/img/learnsign.png')
+        .hero-item-desc
+          p.hero-item-title LearnSIGN
+          p.hero-item-subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          button.button.hero-item-button(onclick="location.href='/learn/'") LEARN NOW
+      .hero-item
+        img.hero-item-img(src='/assets/img/commsign.png')
+        .hero-item-desc
+          p.hero-item-title CommSIGN
+          p.hero-item-subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          button.button.hero-item-button(onclick="location.href='/thread/'") CHAT NOW

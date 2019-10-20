@@ -1,0 +1,13 @@
+nav.nav
+  .navbar-start
+    a.navbar-brand(href='/')
+      img.navbar-logo(src='/assets/img/full-logo.png')
+  .navbar-end
+    .navbar-item
+      a.nav-link(href='/') Home
+    .navbar-item
+      a.nav-link(href='/leaderboard/') Leaderboard
+    .navbar-item
+      button.button.btn-account(type='button')
+        img.navbar-account-img(src='/assets/img/account.png')
+        |               #{username}

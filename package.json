@@ -1,0 +1,28 @@
+{
+  "name": "xor",
+  "version": "1.0.0",
+  "description": "BIOS Hackathon team XOR - Signtech",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biosumn/XOR.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/biosumn/XOR/issues"
+  },
+  "homepage": "https://github.com/biosumn/XOR#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}

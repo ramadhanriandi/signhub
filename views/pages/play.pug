@@ -1,0 +1,33 @@
+extends ../layout
+
+block content  
+  .content-wrapper
+    .back-button
+      a.back-text(href='/')
+        i.fa.fa-angle-left
+        |             Back
+    .play-title
+      | Choose the level
+    .play-subtitle
+      | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+      br
+      | eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    .play-items
+      .play-item(onclick="location.href='/play/easy'")
+        img.play-item-img(src='/assets/img/easy.png')
+        .play-item-desc
+          p.play-item-title Easy
+          p.play-item-subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .play-item(onclick="location.href='/play/easy'")
+        img.play-item-img(src='/assets/img/medium.png')
+        .play-item-desc
+          p.play-item-title Medium
+          p.play-item-subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+      .play-item(onclick="location.href='/play/easy'")
+        img.play-item-img(src='/assets/img/hard.png')
+        .play-item-desc
+          p.play-item-title Hard
+          p.play-item-subtitle
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
